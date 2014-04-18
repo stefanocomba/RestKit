@@ -94,6 +94,7 @@ static NSUInteger RKNumberOfSlashesInString(NSString *string)
 
 - (BOOL)bifurcateSourcePathFromQueryParameters
 {
+    return NO;
     NSArray *components = [self.sourcePath componentsSeparatedByString:@"?"];
     if ([components count] > 1) {
         self.rootPath = [components objectAtIndex:0];
